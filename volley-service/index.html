@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <title>Volley Service</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css'>
+    <link rel="stylesheet" href="styles/style.css">
+    
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+
+      <main class="main">
+        <div class="container">
+          <div class="row">
+            <div class="main-menu-xs col-12 col-sm-12" id="menu-xs">
+              <div class="main-menu-xs-item">
+                <a href="#bestplayers">Игроки</a>
+              </div>
+              <div class="main-menu-xs-item">
+                <a href="#clubs">Клубы</a>
+              </div>
+              <div class="main-menu-xs-item">
+                <a href="#">Статистика</a>
+              </div>
+              <div class="main-menu-xs-item">
+                <a href="#">Расписание</a>
+              </div>
+              <div class="main-menu-xs-item">
+                <a href="#contacts">Контакты</a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="main-logo col-2 col-sm-3 col-md-1 col-lg-2">
+              <div class="main-logo-texttop">VOLLEYSERVICE.RU</div>
+              <div class="main-logo-pic"></div>
+              <div class="main-logo-textbottom">SPORT AGENCY</div>
+            </div>
+            <div class="main-menu col-3 offset-7 col-sm-2 offset-sm-7 col-md-11 offset-md-0 col-lg-10 offset-lg-0">
+              <button class="main-menu-button" id="menu-button"></button>
+              <a href="#bestplayers">Игроки</a>
+              <a href="#clubs">Клубы</a>
+              <a href="#">Статистика</a>
+              <a href="#">Расписание</a>
+              <a href="#contacts">Контакты</a>
+            </div>            
+          </div>
+          <div class="row">
+            <div class="main-want col-lg-12">
+              <h1 data-wow-delay="0s" data-wow-duration="0.4" class="wow fadeInDown">Хочешь играть<br>в престижном клубе?</h1>
+              <div data-wow-delay="0.4s" data-wow-duration="0.1" class="main-want-line col-10 offset-1 col-sm-8 offset-sm-2 col-md-8 offset-md-2 col-lg-8 offset-lg-2 wow zoomIn"></div>
+              <h2 data-wow-delay="0.2s" data-wow-duration="0.4" class="wow fadeInUp col-10 offset-1">Наше спортивное агенство подберет Вам самый подходящий клуб</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="main-request col-lg-4 offset-lg-4">
+              <button id="request-button" class="main-request-button animated pulse" data-wow-iteration="infinite">ПОДАТЬ ЗАЯВКУ</button>
+              <p>Или позвоните сами!<br><a href="tel:8-999-999-99-99"class="main-request-text">8-999-999-99-99</a></p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <section class="request">
+        <div class="container">
+          <div class="row">
+            <div class="contacts-form request-form">
+              <div class="contacts-form-head request-form-head">Volley service</div>
+              <input type="text" class="name" placeholder="Имя">
+              <input type="text" class="phone" placeholder="Телефон">
+              <button type="submit" class="send contacts-form-request request-form-request">Подать заявку</button>
+              <button id="back" class="request-form-back"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why">
+        <div class="container">
+          <div class="row">
+            <div class="why-head col-lg-12">Почему мы?</div>
+          </div>
+          <div class="why-text row">
+            <p class="col-10 offset-1 col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-10 offset-sm-1">Мы - <span>крупнейшее</span> в России волейбольное агентство. Подбираем клубы не только для Российских игроков, но и для легионеров. Благодаря значительным наработкам и обширной базе с 2004 года, наше агентство способно оказывать существенную и квалифицированную помощь в комплектовании команды тем самым повышая спортивные показатели клуба в целом.</p>
+          </div>
+          <div class="row justify-content-center">
+            <div data-wow-offset="50" data-wow-delay="0.1s" data-wow-duration="0.2s" class="wow fadeInUp why-item why-item1 col-8 col-sm-8 col-lg-4 col-md-4">
+              <div class="why-left">
+                <div data-wow-offset="50" class="wow pulse why-item-pic why-item-pic1"></div>
+                <div class="why-item-text why-item-text1">благоприятные<br>условия<br>работы</div>
+              </div>
+            </div>
+            <div data-wow-offset="50" data-wow-delay="0.2s" data-wow-duration="0.2s" class="wow fadeInUp why-item why-item2 col-8 col-sm-6 col-lg-4 col-md-4">
+              <div class="why-right">
+                <div data-wow-offset="50" class="wow pulse why-item-pic why-item-pic2"></div>
+                <div class="why-item-text why-item-text2">перспективы<br>спортивного<br>роста</div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div data-wow-delay="0.3s" data-wow-duration="0.2s" class="wow fadeInUp why-item why-item3 col-8 col-sm-8 col-lg-4 col-md-4">
+              <div class="why-left">
+                <div class="wow pulse why-item-pic why-item-pic3"></div>
+                <div class="why-item-text why-item-text3">финансовые<br>консультации</div>
+              </div>
+            </div>
+            <div data-wow-delay="0.4s" data-wow-duration="0.2s" class="wow fadeInUp why-item why-item4 col-8 col-sm-6 col-lg-4 col-md-4">
+              <div class="why-right">
+                <div class="wow pulse why-item-pic why-item-pic4"></div>
+                <div class="why-item-text why-item-text4">юридические<br>консультации</div>
+              </div>
+            </div>
+          </div>
+          <div class="why-circle-right"></div>
+          <div class="why-circle-center"></div>
+          <div class="why-circle-left"></div>
+        </div>
+      </section>
+
+      <section class="best" id="bestplayers">
+        <div class="container">
+          <div class="row">
+            <div class="best-head col-lg-12">Лучшие в статистике</div>
+          </div>
+          <div class="row">
+            <div data-wow-offset="300" data-wow-duration="0.4s" data-wow-delay="0.3" class="wow fadeInLeft best-1 col-sm-12 col-md-4 col-lg-4">
+              <div class="best-card best-card1">
+                <div class="best-card-pic best-card-pic1"></div>
+                <div class="best-card-role">бомбардир</div>
+                <div class="best-card-name">Мачей Музай</div>
+                <div class="best-card-textleft">Югра<br>Очки: 436</div>
+                <div class="best-card-textright">Рост: 207 см<br>Возраст: 25 лет</div>
+              </div>
+            </div>
+            <div data-wow-offset="300" data-wow-duration="0.3s" data-wow-delay="0.1" class="wow zoomIn best-2 col-sm-12 col-md-4 col-lg-4">
+              <div class="best-card best-card2">
+                <div class="best-card-pic best-card-pic2"></div>
+                <div class="best-card-role">подающий</div>
+                <div class="best-card-name">Грозер Георг</div>
+                <div class="best-card-textleft">Зенит<br>Очки: 33</div>
+                <div class="best-card-textright">Рост: 200 см<br>Возраст: 35 лет</div>
+              </div>
+              
+            </div>
+            <div data-wow-offset="300" data-wow-duration="0.4s" data-wow-delay="0.3" class="wow fadeInRight best-3 col-sm-12 col-md-4 col-lg-4">
+              <div class="best-card best-card3">
+                <div class="best-card-pic best-card-pic3"></div>
+                <div class="best-card-role">болкирующий</div>
+                <div class="best-card-name">Дмитрий Щербинин</div>
+                <div class="best-card-textleft">Локомотив<br>Очки: 56</div>
+                <div class="best-card-textright">Рост: 205 см<br>Возраст: 30 лет</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <button class="best-button">Все игроки</button>
+          </div>
+          <div class="best-circle"></div>
+          <div class="best-circle-up"></div>
+          <div class="best-circle-down"></div>
+        </div>
+      </section>
+      
+      <section class="club" id="clubs">
+        <div class="container">
+          <div class="row">
+            <div class="club-head col-lg-12">Наши клубы</div>
+          </div>
+          <div class="row">
+            <div class="club-text col-sm-6 col-md-6 col-lg-4 offset-lg-2">
+              <a href="http://volleyufa.ru/">Урал</a><br>
+              <a href="https://vcdynamo.ru/">ДИНАМО Москва</a><br>
+              <a href="https://zenit-kazan.com/index.php?rus/">ЗЕНИТ-КАЗАНЬ</a><br>
+              <a href="http://www.fakelvolley.ru/">ФАКЕЛ Новый Уренгой</a><br>
+              <a href="https://www.lokovolley.com/">ЛОКОМОТИВ</a><br>
+              <a href="http://www.vc-dynamo.ru/">ДИНАМО-ЛО</a><br>
+              <a href="https://www.belogorievolley.ru/">БЕЛОГОРЬЕ</a><br>
+              <a href="https://vczenit-spb.ru/">ЗЕНИТ</a><br>
+              <a href="http://gazprom-ugra.ru/club/gazpromugra/">ГАЗПРОМ-ЮГРА</a><br>
+              <a href="http://nova-volleyball.ru/">НОВА</a><br>
+              <a href="http://www.yarvolley.ru/">ЯРОСЛАВИЧ</a><br>
+              <a href="http://kuzbass-volley.ru/">КУЗБАСС</a><br>
+              <a href="http://www.vc-enisey.ru/">ЕНИСЕЙ</a><br>
+              <a href="http://ugra-samotlor.ru/">ЮГРА-САМОТЛОР</a>    
+              <div class="club-word club-word-m">МУЖСКИЕ</div>
+            </div>
+            <div class="club-text col-sm-6 col-md-6 col-lg-4">
+              <a href="http://www.vldinamo.ru/">ДИНАМО</a><br>
+              <a href="http://www.dinamo-kazan.com/">ДИНАМО-КАЗАНЬ</a><br>
+              <a href="https://www.uralochka-vc.com/">УРАЛОЧКА-НТМК</a><br>
+              <a href="https://zarechievolley.ru/">ЗАРЕЧЬЕ</a><br>
+              <a href="http://www.vc-enisey.ru/">ЕНИСЕЙ</a><br>
+              <a href="http://leningradka.spb.ru/">ЛЕНИНГРАДКА</a><br>
+              <a href="http://www.dinamokrasnodar.ru/">ДИНАМО Краснодар</a><br>
+              <a href="http://www.volley.ru/clubs/120/">САХАЛИН</a><br>
+              <a href="http://dinamometar.ru/">ДИНАМО-МЕТАР</a><br>
+              <a href="http://www.vc-lokomotiv.com/">Локомотив</a><br>
+              <a href="https://vcminsk.com/blog/club/minchanka-ru/">МИНСК</a>
+              <div class="club-word club-word-w">ЖЕНСКИЕ</div>
+          </div>
+        </div>
+        <div data-wow-offset="300" data-wow-duration="0.5s" class="wow fadeInLeft club-picm"></div>
+        <div data-wow-offset="350" data-wow-duration="1.5s" class="wow fadeInDown club-ballm"></div>
+        <div data-wow-offset="300" data-wow-duration="0.5s" class="wow fadeInRight club-picw"></div>
+        <div data-wow-offset="350" data-wow-duration="1.5s" class="wow fadeInDown club-ballw"></div>
+        <div class="club-line"></div>
+      </section>
+
+      <div class="news">
+        <div class="container">
+          <div class="row">
+            <div class="news-lg col-lg-1 col-md-2 col-sm-3">
+              <button class="news-arrow news-arrow-left"></button>
+            </div>
+            <div class="news-head col-12 col-lg-10 col-md-8 col-sm-6">Новости</div>
+            <div class="news-lg col-lg-1 col-md-2 col-sm-3">
+              <button class="news-arrow news-arrow-right"></button>
+            </div>
+          </div>
+          <div class="news-slider row">
+            <div class="col-12 col-sm-12 col-lg-6 col-md-6 news-cards">
+              <div class="news-card">
+                <div class="row news-fix">
+                  <div class="news-card-head col-10 offset-1 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-1">АНДРЕЙ АНАНЬЕВ ПЕРЕШЕЛ ИЗ «ФАКЕЛА» В ПИТЕРСКИЙ «ЗЕНИТ»</div>
+                </div>
+                <div class="row news-fix">
+                  <div class="news-card-pic-xs col-10 offset-1 col-sm-5 offset-sm-0 col-md-12 offset-md-0 col-lg-5 offset-lg-0">
+                    <div class="news-card-pic news-card-pic1"></div>
+                  </div>
+                  <div class="col-10 offset-1 col-sm-7 offset-sm-0 col-md-12 offset-md-0 col-lg-7 offset-lg-0">
+                    <div class="news-card-text">Бронзовый призер клубного чемпионата мира 2018 Андрей АНАНЬЕВ (его интересы представляет спортивное агентство «ВОЛЕЙ СЕРВИС») покидает новоуренгоский «Факел». Игрок подписал годичный контракт с питерским «Зенитом»...</div>
+                  </div>
+                </div>
+                <div class="row news-fix">
+                  <div class="col-4 offset-4 col-sm-3 offset-sm-0 col-md-4 offset-md-0 col-lg-3 offset-lg-0">
+                    <div class="news-card-date">26.04.2020</div>
+                  </div>
+                  <div class="news-lg col-sm-9 col-md-8 col-lg-9">
+                    <button class="news-card-button">Подробнее</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 col-md-6 news-cards">
+              <div class="news-card">
+                <div class="row news-fix">
+                  <div class="news-card-head col-10 offset-1 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-1">«А КАК У НИХ ?» КЛУБЫ С ОСТРОВОВ И ДАЖЕ ИЗ АФРИКИ! НИЧЕГО НЕ ПОНЯТНО</div>
+                </div>
+                <div class="row news-fix">
+                  <div class="news-card-pic-xs col-10 offset-1 col-sm-5 offset-sm-0 col-md-12 offset-md-0 col-lg-5 offset-lg-0">
+                    <div class="news-card-pic news-card-pic2"></div>
+                  </div>
+                  <div class="col-10 offset-1 col-sm-7 offset-sm-0 col-md-12 offset-md-0 col-lg-7 offset-lg-0">
+                    <div class="news-card-text">Турнир мужского высшего дивизиона чемпионата Испании («Superliga Masculina») прерван после 20-го тура из 22-х запланированных в регулярном сезоне. Интересно, что в этой лиге ровно треть команд – с островных территорий страны. А еще один клуб – и вовсе из Африки!...</div>
+                  </div>
+                </div>
+                <div class="row news-fix">
+                  <div class="col-4 offset-4 col-sm-3 offset-sm-0 col-md-4 offset-md-0 col-lg-3 offset-lg-0">
+                    <div class="news-card-date">13.04.2020</div>
+                  </div>
+                  <div class="news-lg col-sm-9 col-md-8 col-lg-9">
+                    <button class="news-card-button">Подробнее</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 col-md-6 news-cards">
+              <div class="news-card">
+                <div class="row news-fix">
+                  <div class="news-card-head col-10 offset-1 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-1">БИЧ-ВОЛЕЙ/ БЛИЖАЙШИЕ ОФИЦИАЛЬНО НЕОТМЕНЕННЫЕ ТУРНИРЫ</div>
+                </div>
+                <div class="row news-fix">
+                  <div class="news-card-pic-xs col-10 offset-1 col-sm-5 offset-sm-0 col-md-12 offset-md-0 col-lg-5 offset-lg-0">
+                    <div class="news-card-pic news-card-pic3"></div>
+                  </div>
+                  <div class="col-10 offset-1 col-sm-7 offset-sm-0 col-md-12 offset-md-0 col-lg-7 offset-lg-0">
+                    <div class="news-card-text">Приводим список ближайших официально не отмененных мужских турниров по пляжному волейболу, в которых могли бы сыграть действующие чемпионы мира Вячеслав Красильников и Олег Стояновский...</div>
+                  </div>
+                </div>
+                <div class="row news-fix">
+                  <div class="col-4 offset-4 col-sm-3 offset-sm-0 col-md-4 offset-md-0 col-lg-3 offset-lg-0">
+                    <div class="news-card-date">02.05.2020</div>
+                  </div>
+                  <div class="news-lg col-sm-9 col-md-8 col-lg-9">
+                    <button class="news-card-button">Подробнее</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 col-md-6 news-cards">
+              <div class="news-card">
+                <div class="row news-fix">
+                  <div class="news-card-head col-10 offset-1 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-1">ЕКВ/ «EUROVOLLEY TV» В МАЕ – БЕСПЛАТНО</div>
+                </div>
+                <div class="row news-fix">
+                  <div class="news-card-pic-xs col-10 offset-1 col-sm-5 offset-sm-0 col-md-12 offset-md-0 col-lg-5 offset-lg-0">
+                    <div class="news-card-pic news-card-pic4"></div>
+                  </div>
+                  <div class="col-10 offset-1 col-sm-7 offset-sm-0 col-md-12 offset-md-0 col-lg-7 offset-lg-0">
+                    <div class="news-card-text">Интернет-телеканал ЕКВ «EUROVOLLEY TV» объявил, что в мае предоставляемым контентом можно пользоваться бесплатно. Сейчас ретроспектива матчей под эгидой ЕКВ идет круглосуточно. Раньше месячная оплата составляла 4.99 евро...</div>
+                  </div>
+                </div>
+                <div class="row news-fix">
+                  <div class="col-4 offset-4 col-sm-3 offset-sm-0 col-md-4 offset-md-0 col-lg-3 offset-lg-0">
+                    <div class="news-card-date">29.04.2020</div>
+                  </div>
+                  <div class="news-lg col-sm-9 col-md-8 col-lg-9">
+                    <button class="news-card-button">Подробнее</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news-xs row"> 
+            <button class="col-3 news-arrow news-arrow-left"></button>  
+            <button class="col-6 news-card-button">Подробнее</button>    
+            <button class="col-3 news-arrow news-arrow-right"></button>  
+          </div>
+        </div>
+      </div>
+
+      <div class="contacts" id="contacts">
+        <div class="container">
+          <div class="row">
+            <div class="contacts-left col-sm-12 col-md-6 col-lg-6 col">
+              <div class="contacts-map"></div>
+              <div class="contacts-mark">
+                <div class="contacts-mark-center">Лужнецкая наб. 6, стр. 2 офис 4</div>
+                <div class="row">
+                  <div class="contacts-mark-text col-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="contacts-mark-left"><a href="mailto:someone@yandex.ru">email: info@volleyservice.ru</a><br><a href="mailto:someone@mail.ru">email: volleyservice@mail.ru</a></div>
+                  </div>
+                  <div class="contacts-mark-text col-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="contacts-mark-right"><a href="tel:8-499-999-99-99">тел: 8(499)999-99-99</a><br><a href="tel:8-499-999-99-99">факс: 8(495)999-99-99</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contacts-right col-sm-12 col-md-6 col-lg-6">
+              <div class="contacts-form">
+                <div class="contacts-form-head">Заинтересовало?</div>
+                <input type="text" class="name" placeholder="Имя">
+                <input type="text" class="phone" placeholder="Телефон">
+                <button type="submit" class="contacts-form-request send">Подать заявку</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-1 col-sm-1 col-lg-1 col-md-1">
+               <div class="footer-logo"></div>
+            </div>
+            <a class=" col-6 offset-2 col-sm-4 offset-sm-3 col-lg-4 offset-lg-3 col-md-4 offset-md-3" href="http://www.volleyservice.ru/">www.volleyservice.ru</a>
+            <div class="footer-web col-2 col-sm-3 offset-sm-1 col-md-2 col-lg-2 offset-lg-2">Веб-разработка<br><a href="https://vk.com/artyd1">Art-Volley</a></div>
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <script src="slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        
+      //animation
+      var wow = new WOW;
+      wow.init();
+
+      //slider
+      $(".news-slider").slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        prevArrow: $('.news-arrow-left'),
+        nextArrow: $('.news-arrow-right'),
+        responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            prevArrow: $('.news-arrow-left'),
+            nextArrow: $('.news-arrow-right'),
+          }
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            prevArrow: $('.news-arrow-left'),
+            nextArrow: $('.news-arrow-right'),
+          }
+        }]
+ 
+      });
+
+      //menu-buttons
+      var tog = true;
+      $("#menu-xs").hide();
+      $("#menu-button").click(function(){
+        $("#menu-xs").toggle('slow');
+        if(tog === true){
+          $(this).css('background-color','rgba(0,0,0,0)');
+          $(this).css('box-shadow','none');
+          tog = false;
+        }
+        else{
+          $(this).css('background-color','rgba(227, 227, 227, 0.25)');
+          $(this).css('box-shadow','2px 2px 15px rgba(0, 0, 0, 0.15)');
+          tog = true;
+        }
+      });
+      $(window).resize(function() {
+        if ($(window).width() <= '768'){
+          $("#menu-xs").hide();
+          $("#menu-button").css('background-color','rgba(227, 227, 227, 0.25)');
+          $("#menu-button").css('box-shadow','2px 2px 15px rgba(0, 0, 0, 0.15)');
+        }
+      });
+
+      //request button
+      $(".request").hide();
+      $("#request-button").click(function(){
+        $(".request").show();
+      });
+      $("#back").click(function(){
+        $(".request").hide();
+      });
+      $(".send").click(function(){
+        $(".request").hide();
+        alert("Заявка успешно отправлена");
+      });
+
+
+      //masks
+      $(".phone").mask("8(999)999-99-99");
+      });
+
+
+      </script>
+  </body>
+</html>
