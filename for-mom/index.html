@@ -6,42 +6,27 @@
     <script>
         var x
         function textChanged(obj){
-            x = obj.value;           
+            x = obj.value.replace(/\n/g, '<br/>');            
         }
         function translateFunc(){
-            document.getElementById('translatedText').innerHTML = document.getElementById('translatingText').innerHTML;
+            if (x !== undefined)
+                document.getElementById('translatedText').innerHTML = x;
+            else 
+                alert("Write something");
         }
     </script>
   </head>
   <body>
     <center>
-        <div class="translatingText" id="translatingText" 
-        name="translatingText" contenteditable="true" onchange="textChanged(this)"></div>
+        <textarea class="translatingText" id="translatingText" name="translatingText"
+        onchange="textChanged(this)"
+        placeholder="Write something to translate" rows="10" ></textarea>
         <div>
             <button onclick="translateFunc()"><b>TRANSLATE</b></button>
-            <div class="translatedText" id="translatedText" 
-            name="translatedText">Your result</div>
+            <p align="left" class="translatedText" id="translatedText" name="translatedText">Your result</p>
         </div>
     </center>
-    <script>
-        document.addEventListener('paste', function(e) {
-            e.preventDefault();
-
-            var pastedText = ''
-
-            if (window.clipboardData && window.clipboardData.getData) { // IE
-
-                pastedText = window.clipboardData.getData('Text');
-
-            } else if (e.clipboardData && e.clipboardData.getData) {
-
-                pastedText = e.clipboardData.getData('text/html');
-
-            }
-
-            document.getElementById('translatingText').innerHTML = pastedText
-        });
-    </script>
+    
   </body>
   <style>
         body
@@ -76,9 +61,6 @@
         button:hover{
             background: #eee;
         }
-        .translatingText
-        {
-            height: 100px;
-        }
+        button:
   </style>
 </html>
