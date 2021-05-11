@@ -1,20 +1,22 @@
 <!doctype html>
 <html lang="ru">
   <head>
-      <script>
-          function translate(){
-            document.form.translatedText.value = document.form.translatingText.value+num;
-          }
-      </script>
     <title>FOR MOM</title>
     <meta charset="utf-8">
+    <script>
+        function translateFunc(obj){
+          document.getElementById('translatedText').innerHTML = obj.value;
+        }
+    </script>
   </head>
   <body>
-    <textarea class="translatingText" id="translatingText" name="translatingText"
-            onchange="translate()"
-            cols="30" rows="10"></textarea>
-    <div>
-        <h4 class="translatedText" id="translatedText" name="translatedText">hello world</h4>
-    </div>
+    <center>
+        <textarea class="translatingText" id="translatingText" name="translatingText"
+        onchange="translateFunc(this)"
+        cols="100" rows="10">Write something to translate</textarea>
+        <div>
+            <p class="translatedText" id="translatedText" name="translatedText">Your result</p>
+        </div>
+    </center>
   </body>
 </html>
