@@ -3,7 +3,7 @@
   <head>
       <script>
           function translate(){
-
+            document.form.translatedText.value = document.form.translatingText.value+num;
           }
       </script>
     <title>FOR MOM</title>
@@ -11,7 +11,7 @@
   </head>
   <body>
     <textarea class="translatingText" id="translatingText" 
-            onchange="alert(this.value)"
+            onchange="translate()"
             cols="30" rows="10"></textarea>
     <div class="translatedText" id="translatedText"></div>
   </body>
