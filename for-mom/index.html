@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <script>
         function translateFunc(obj){
-          document.getElementById('translatedText').innerHTML = obj.value;
+            var x = obj.value.replace(/\n/g, '<br/>');
+            document.getElementById('translatedText').innerHTML = x;
         }
     </script>
   </head>
