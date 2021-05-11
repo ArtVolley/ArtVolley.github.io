@@ -1,10 +1,18 @@
 <!doctype html>
 <html lang="ru">
   <head>
+      <script>
+          function translate(){
+
+          }
+      </script>
     <title>FOR MOM</title>
     <meta charset="utf-8">
   </head>
   <body>
-    <textarea cols="30" rows="10"></textarea>
+    <textarea class="translatingText" id="translatingText" 
+            onchange="alert(this.value)"
+            cols="30" rows="10"></textarea>
+    <div class="translatedText" id="translatedText"></div>
   </body>
 </html>
