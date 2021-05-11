@@ -6,28 +6,23 @@
     <script>
         var x
         function textChanged(obj){
-            x = obj.value.replace(/\n/g, '<br/>');            
+            x = obj.value;           
         }
         function translateFunc(){
-            if (x !== undefined)
-                document.getElementById('translatedText').innerHTML = x;
-            else 
-                alert("Write something");
+            document.getElementById('translatedText').innerHTML = document.getElementById('translatingText').innerHTML;
         }
     </script>
   </head>
   <body>
     <center>
-        <textarea class="translatingText" id="translatingText" name="translatingText"
-        onchange="textChanged(this)"
-        placeholder="Write something to translate" rows="10" ></textarea>
+        <div class="translatingText" id="translatingText" 
+        name="translatingText" contenteditable="true" onchange="textChanged(this)"></div>
         <div>
             <button onclick="translateFunc()"><b>TRANSLATE</b></button>
-            <p align="left" class="translatedText" id="translatedText" name="translatedText">Your result</p>
+            <div class="translatedText" id="translatedText" 
+            name="translatedText">Your result</div>
         </div>
     </center>
-    <div id="target" contenteditable="true" background-color="#eeeeee"></div>
-
     <script>
         document.addEventListener('paste', function(e) {
             e.preventDefault();
@@ -44,7 +39,7 @@
 
             }
 
-            document.getElementById('target').innerHTML = pastedText
+            document.getElementById('translatingText').innerHTML = pastedText
         });
     </script>
   </body>
@@ -81,6 +76,9 @@
         button:hover{
             background: #eee;
         }
-        button:
+        .translatingText
+        {
+            height: 100px;
+        }
   </style>
 </html>
