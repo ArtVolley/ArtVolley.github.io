@@ -110,7 +110,7 @@ a {
   font-weight: 400;
 }
 .members {
-  height: 700px;
+  height: 730px;
   padding-top: 100px;
   background-color: white;
 }
@@ -121,6 +121,9 @@ a {
   text-transform: uppercase;
   margin-bottom: 100px;
   font-size: 50px;
+}
+.members-member-work {
+  color: #80aca8;
 }
 .members-member-photo {
   margin: 0 auto;
